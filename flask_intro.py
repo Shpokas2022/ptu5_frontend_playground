@@ -21,6 +21,7 @@ def zmones():
     ]
     return render_template("zmones.html", zmones=zmones)
 
+
 @app.route("/login")
 def login():
     return render_template("login.html")

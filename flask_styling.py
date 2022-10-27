@@ -6,8 +6,13 @@ app = Flask(__name__)
 def home():
     return render_template("styling/home.html")
 
-@app.route("/containers")
 def containers():
     return render_template("styling/containers.html")
+
+@app.route("/grid")
+
+def grid():
+    return render_template("styling/grid.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

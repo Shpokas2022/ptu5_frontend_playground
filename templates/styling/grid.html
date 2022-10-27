@@ -5,41 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid layout</title>
-    <style>
-.container {
-    display: grid;
-    grid-template-columns: 25% 30% 30% 20%;
-    grid-template-rows: auto;
-    width: 70vw;
-    margin: 2rem auto;
-}
-.cont3 {
-    grid-template-columns: 33.3% 33.4% 33.3%;
-}
-
-.cont4 {
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.item {
-    background-color: #ccc;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-    </style>
+    <link rel="stylesheet" href="/static/grid.css">
 </head>
 <body>
-    <div class="container cont3">
-        <div class="item">Pirmas</div>
-        <div class="item">Antras</div>
-        <div class="item">Trecias</div>
+<!-- <div class="container cont3">
+         <div class="item">Pirmas</div> -->
+        <div class="item col-double">Antras</div>
+        <!--<div class="item">Trecias</div>
         <div class="item">Ketvirtas</div>
+        <div class="item">Penktas</div>
+        <div class="item">Šeštas</div>
     </div>
     <div class="container cont4">
-        <div class="item">Antras<br>Pirmas</div>
+        <div class="item logo">
         <div class="item">Antras<br>Antras</div>
         <div class="item">Antras<br>Trecias</div>
         <div class="item">Antras<br>Ketvirtas</div>
+    </div> -->
+    <div class="container cont4">
+        <div class="item">Logo</div>
+        <div class="item meniu">
+            Home |
+            Jokes |
+            Memes |
+            Contact
+        </div>
+        <!-- antra eilute -->
+        <div class="item">Pirmas</div>
+        <div class="item row-double col-double">X</div>
+        <div class="item">paskutinis</div>
+        <div class="item footer">(C) 2022 DVA</div>
     </div>
-
 </body>
 </html>

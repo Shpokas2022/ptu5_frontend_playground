@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: 25% 30% 30% 20%;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+    /* gap: 0.2rem 0.5rem; */
+    /* margin-top: 0.5rem; * /
+
+}
+.cont3 {
+    /* dalilnama frakcijomis. Fraksija padalina į tikslias dalis */
+    grid-template-columns: 2fr 3fr 2fr;
+    /* grid-template-columns: repeat(3, calc(100%/3 - 0.5rem * 2 / 3)); */
+    /* grid-template-columns: calc(30% - 0.5rem * 2 / 3) calc(40% - 0.5rem * 2 / 3) calc(30% - 0.5rem * 2 / 3); */
+}
+
+.cont4 {
+   /* grid-template-columns: calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4); */
+   /* automatiškai skaičiuoja antro ir ketvirto stulpelių pločius */ 
+   /* grid-template-columns: calc(30% - 0.5rem * 3 / 4) auto auto calc(20% - 0.5rem * 3 / 4); */
+   /* auto ištampo pagal turinį */
+   /* grid-template-columns: repeat(4, auto); */
+   grid-template-columns: repeat(4, 1fr);
+
+}
+.item {
+    background-color: rgb(225, 13, 13);
+    color: aliceblue;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.col-double {
+    grid-column: span 3;
+}
+.row-double {
+    grid-row: span 2;
+}
+
+.meniu {
+    grid-column: span 3;
+}
+.footer {
+    grid-column: span 4;
+}
+
+img.logo {
+    max-height: 30px;
+}
+
+.meniu, .logo {
+    background-color: #000;
+    color: #ccc;
+}

@@ -14,5 +14,9 @@ def containers():
 def grid():
     return render_template("styling/grid.html")
 
+@app.route("/fullpage")
+def fullpage():
+    return render_template("styling/fullpage.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

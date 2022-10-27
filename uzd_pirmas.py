@@ -13,6 +13,7 @@ def darius():
 
 @app.route("/keliamieji_skaiciavimai")
 def keliamieji():
+    # Kreipiuosi į žodyną
     ivesta = int(request.args["metai"])
     if ivesta % 4 == 0 or (ivesta % 100 !=0 and ivesta % 400 == 0):
         atsakymas = "keliamieji"

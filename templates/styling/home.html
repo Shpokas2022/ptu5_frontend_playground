@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styling</title>
+    <style>
+
+body {
+    background-color: #add6b5;
+    background-image: url("{{ url_for('static', filename='sunset.jpg') }}");
+    background-size: cover;
+    background-position: 0 10%;
+}
+h1, h2 { 
+    border: 4px solid rgb(213, 43, 43);
+    /* fonas baltas */
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    /*vidinis atitraukimas per 1 realityvu elememta rem */
+    padding: 1rem;
+    text-align: center;
+    /* išorinis rėmelis -0 nuo viršaus ir apačios, 
+    auto iš šonų (kad centruotu) */
+    margin: 0.5rem auto;
+    /* plotis puse ekrano, vw yra visas ekrano plotis*/
+    width: 50%;
+}
+
+h2 {
+    /* tik h2 keiciame remelio apacios rema */
+    border-bottom-width: 10px;
+    box-shadow: #999 0.5rem 0.25rem;
+}
+.antras {
+    color: rgb(250, 10, 14);
+}
+
+.septyniasdesimt {
+    width: 70vw
+}
+
+.text-center {
+    text-align: center;
+}
+
+.right-box {
+    display: inline;
+    float: right;
+    width: 33%;
+    padding: 1rem;
+    border: 2px solid #999;
+    background-color: black;
+    color: #fff;
+    margin-top: 1rem;
+}
+h1.highlight {
+    background-color: #f9f;
+}
+
+.highlight {
+    background-color: #fc0;
+}
+img {
+    max-width: 20%;
+    float: left;
+    margin: 0.5rem;
+    border: 2px solid #f9f;
+}
+    </style>
+</head>
+<body>
+    <h1 class="highlight">Hello World</h1>
+    <p>Everything seems working...</p>
+    <p> Different paragraph of text</p>
+    <h2 class="antras" style="margin:auto" bottom: 2rem; >Fat new smallness few supposing suspicion two
+    </h2>
+    <img src="https://m.media-amazon.com/images/I/61GZjZW8orL._SS500_.jpg">
+    <p style="color: rgb(55, 0, 255)";>Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself his. Of instantly excellent therefore difficult he northward. Joy green but least marry rapid quiet but. Way devonshire introduced expression saw travelling affronting. Her and effects affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in listening.
+    </p>
+    <p class="septyniasdesimt text-center">Behaviour we improving at something to. Evil true high lady roof men had open. To projection considered it precaution an melancholy or. Wound young you thing worse along being ham. Dissimilar of favourable solicitude if sympathize middletons at. Forfeited up if disposing perfectly in an eagerness perceived necessary. Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Travelling by introduced of mr terminated. Knew as miss my high hope quit. In curiosity shameless dependent knowledge up.
+    </p>
+    <p class="right-box">Entire any had depend and figure winter. Change stairs and men likely wisdom new happen piqued six. Now taken him timed sex world get. Enjoyed married an feeling delight pursuit as offered. As admire roused length likely played pretty to no. Means had joy miles her merry solid order.
+    </p>
+    <p class="highlight">Certainty listening no no behaviour existence assurance situation is. Because add why not esteems amiable him. Interested the unaffected mrs law friendship add principles. Indeed on people do merits to. Court heard which up above hoped grave do. Answer living law things either sir bed length. Looked before we an on merely. These no death he at share alone. Yet outward the him compass hearted are tedious.
+    </p>
+    <p>Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age brother sending amongst why covered.
+    </p>
+    <p>Now seven world think timed while her. Spoil large oh he rooms on since an. Am up unwilling eagerness perceived incommode. Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as.
+    </p>
+    <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.
+
+    </p>
+    <p>Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows adapted sir. Wrong widen drawn ample eat off doors money. Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.
+
+    </p>
+    <p>At distant inhabit amongst by. Appetite welcomed interest the goodness boy not. Estimable education for disposing pronounce her. John size good gay plan sent old roof own. Inquietude saw understood his friendship frequently yet. Nature his marked ham wished.
+
+    </p>
+</body>
+</html>

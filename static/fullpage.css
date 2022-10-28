@@ -4,15 +4,20 @@ display: grid;
 grid-template-rows: 3rem auto 10rem;
 margin: 0;
 min-height: 100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
     background-color: #333;
     color: #eee;
     /* grid-column: span 2; */
+    display: grid;
+    place-items: stretch center;
 }
 footer {
     background-color: #ccc;
     /* grid-column: span 2; */
+    display: grid;
+    place-items: stretch center;
 }
 main {
     background: url('/static/sunset.jpg');
@@ -27,10 +32,31 @@ main {
     width: 1200px;
     max-width: 90vw;
 }
+
+header .container{
+    display: grid;
+    place-items: center start;
+    grid-template-columns: repeat(6, auto);
+}
+
+header .logo {
+    max-height: 3rem;
+}
+header a {
+    color: #fec;
+    padding: 0.7rem;
+    font-size: 120%;
+    text-decoration: none;
+}
+/* užvedus su pele mygtukas keičia spalvą */
+header a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
 main .container{
     background-color: rgba(255, 255, 255, 0.3);
     display: grid;
-    grid-template-columns: auto 20%;
+    grid-template-columns: 3rem auto;
     place-items: stretch stretch;
 }
 .sidebar {
@@ -43,4 +69,6 @@ main .container{
 .content h1 {
     text-align: center;
     border-bottom: 4px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-top: 00.5rem;
 }
